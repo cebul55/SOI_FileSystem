@@ -1,0 +1,3 @@
+/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles/SOI_FileSystem.dir
