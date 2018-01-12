@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = "/Users/bartoszcybulski/Documents/Informatyka WEITI Materiał
 CMakeFiles/SOI_FileSystem.dir/all:
 	$(MAKE) -f CMakeFiles/SOI_FileSystem.dir/build.make CMakeFiles/SOI_FileSystem.dir/depend
 	$(MAKE) -f CMakeFiles/SOI_FileSystem.dir/build.make CMakeFiles/SOI_FileSystem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target SOI_FileSystem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles" --progress-num=1,2,3 "Built target SOI_FileSystem"
 .PHONY : CMakeFiles/SOI_FileSystem.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/SOI_FileSystem.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SOI_FileSystem.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles" 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SOI_FileSystem.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/SOI_FileSystem.dir/rule

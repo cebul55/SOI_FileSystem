@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/fs.cpp" "/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles/SOI_FileSystem.dir/fs.cpp.o"
   "/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/main.cpp" "/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/cmake-build-debug/CMakeFiles/SOI_FileSystem.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

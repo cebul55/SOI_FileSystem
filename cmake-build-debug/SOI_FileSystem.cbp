@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/fs.cpp">
+			<Option target="SOI_FileSystem"/>
+		</Unit>
 		<Unit filename="/Users/bartoszcybulski/Documents/Informatyka WEITI Materiały /Semestr_3/Systemy Operacyjne/SOI_FileSystem/main.cpp">
 			<Option target="SOI_FileSystem"/>
 		</Unit>

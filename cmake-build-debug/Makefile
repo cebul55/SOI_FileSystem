@@ -123,6 +123,33 @@ SOI_FileSystem/fast:
 	$(MAKE) -f CMakeFiles/SOI_FileSystem.dir/build.make CMakeFiles/SOI_FileSystem.dir/build
 .PHONY : SOI_FileSystem/fast
 
+fs.o: fs.cpp.o
+
+.PHONY : fs.o
+
+# target to build an object file
+fs.cpp.o:
+	$(MAKE) -f CMakeFiles/SOI_FileSystem.dir/build.make CMakeFiles/SOI_FileSystem.dir/fs.cpp.o
+.PHONY : fs.cpp.o
+
+fs.i: fs.cpp.i
+
+.PHONY : fs.i
+
+# target to preprocess a source file
+fs.cpp.i:
+	$(MAKE) -f CMakeFiles/SOI_FileSystem.dir/build.make CMakeFiles/SOI_FileSystem.dir/fs.cpp.i
+.PHONY : fs.cpp.i
+
+fs.s: fs.cpp.s
+
+.PHONY : fs.s
+
+# target to generate assembly for a file
+fs.cpp.s:
+	$(MAKE) -f CMakeFiles/SOI_FileSystem.dir/build.make CMakeFiles/SOI_FileSystem.dir/fs.cpp.s
+.PHONY : fs.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SOI_FileSystem"
+	@echo "... fs.o"
+	@echo "... fs.i"
+	@echo "... fs.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

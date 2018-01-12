@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SOI_FileSystem.dir/main.cpp.o"
+  "CMakeFiles/SOI_FileSystem.dir/fs.cpp.o"
   "SOI_FileSystem.pdb"
   "SOI_FileSystem"
 )

@@ -3,4 +3,4 @@ project(SOI_FileSystem)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(SOI_FileSystem main.cpp)
+add_executable(SOI_FileSystem main.cpp fs.cpp)
