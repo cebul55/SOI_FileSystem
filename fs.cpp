@@ -82,3 +82,40 @@ void VirtualFileSystem::createFile(unsigned size) {
     }
     ofile.close();
 }
+
+void VirtualFileSystem::removeFile(std::string fileName) {
+    inode *node;
+    if((node = findInode(fileName)) == NULL)
+        throw std::logic_error("File doesn't exist.");
+    std::swap(*node,inodeVector_.back());
+    inodeVector_.pop_back();
+}
+
+void VirtualFileSystem::listAllFiles(){
+    std::cout << std::setw(10) << "start"
+              << std::setw(10) << "koniec"
+              << std::setw(10) << "rozmiar"
+              << std::setw(10) << "rozmiar"
+              << std::setw(30) << "nazwa" << std::endl;
+    std::cout << std::setw(10) << "[blok]"
+              << std::setw(10) << "[blok]"
+              << std::setw(10) << "[bloki]"
+              << std::setw(10) << "[bajty]" << std::endl;
+    for(unsigned i = 0; i < inodeVector_.size(); ++i)
+    {
+        std::cout << std::setw(10) << inodeVector_[i].begin
+                  << std::setw(10) << inodeVector_[i].end()-1
+                  << std::setw(10) << inodeVector_[i].blocks
+                  << std::setw(10) << inodeVector_[i].size
+                  << std::setw(30) << inodeVector_[i].name << std::endl;
+    }
+}
+
+VirtualFileSystem::inode *VirtualFileSystem::findInode(std::string name) {
+    for(unsigned i = 0; i<inodeVector_.size() ; ++i){
+        if(inodeVector_[i].name == name)
+            return &inodeVector_[i];
+    }
+    return NULL;
+}
+

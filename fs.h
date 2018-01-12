@@ -50,7 +50,7 @@ public:
     void removeFile(std::string);
     void listAllFiles();
     void mapFileSystem();
-    void open();
+    //void open();
     /*std::string get_title()
     {
         return std::string("Wirtualny system plikow");
