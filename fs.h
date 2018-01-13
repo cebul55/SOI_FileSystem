@@ -12,6 +12,7 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
+#include <sys/stat.h>
 
 
 class VirtualFileSystem{
@@ -39,6 +40,8 @@ class VirtualFileSystem{
     void close();
     inode *findInode(std::string);
     static int cmpInode(inode, inode);
+    size_t getFileSize(std::string);
+    void sortiNodeVector();
 public:
     VirtualFileSystem(std::string name);
     ~VirtualFileSystem();
