@@ -2,10 +2,18 @@
 
 #include "fs.h"
 
-int main(int argc , char** argv){
+int main(int argc , char* argv[]){
 
+    if(argc < 2){
+        std::cout<<"more than 1 argument needed\n";
+        return 0;
+    }
+    else{
+        if
+    }
     VirtualFileSystem vi("KACPER");
     vi.openFile();
+    vi.downloadFile("ja.txt");
     /*unsigned size = 20;
     vi.createFile(size);
     //vi.uploadFile("ja.txt");

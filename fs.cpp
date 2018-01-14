@@ -16,20 +16,13 @@ VirtualFileSystem::VirtualFileSystem(std::string name):
     //open();
 }
 VirtualFileSystem::~VirtualFileSystem() {
-    //close();
+    close();
 }
 
 unsigned VirtualFileSystem::alloc(unsigned blocks) {
     unsigned hole, nodes; //indexOfFirstiNode = 0 , indexOdLastNode = 0;
     while(1){
         nodes = inodeVector_.size();
-        //sortiNodeVector();
-        /*for(unsigned i = 0 ;  i < inodeVector_.size(); i++){
-            if(inodeVector_[i].begin < inodeVector_[indexOfFirstiNode].begin)
-                indexOfFirstiNode=i;
-            if(inodeVector_[i].end()>inodeVector_[indexOdLastNode].end())
-                indexOdLastNode=i;
-        }*/
         if(nodes == 0 || inodeVector_[0].begin - SYSTEM_BLOCKS >= blocks){
             return SYSTEM_BLOCKS;
         }
@@ -49,12 +42,12 @@ unsigned VirtualFileSystem::alloc(unsigned blocks) {
 int VirtualFileSystem::cmpInode(inode a, inode b) { return a.begin < b.begin ;}
 
 void VirtualFileSystem::close() {
-    sort(inodeVector_.begin(), inodeVector_.end(), cmpInode);
+    //sort(inodeVector_.begin(), inodeVector_.end(), cmpInode);
+    sortiNodeVector();
     buffer_ buff[SYSTEM_BLOCKS];
     unsigned index = 0;
     for( unsigned j=0; j < SYSTEM_BLOCKS ; j++){
-        for(unsigned i = 0 ; i < BLOCK_SIZE ; i+= sizeof(inode)){
-            index++;
+        for(unsigned i = 0 ; i < BLOCK_SIZE ; i+= sizeof(inode), index++){
             inode *ptr = reinterpret_cast<inode*>(buff[j] + i);
             if(index < inodeVector_.size())
                 *ptr = inodeVector_[index];
@@ -121,8 +114,7 @@ void VirtualFileSystem::listAllFiles(){
               << std::setw(10) << "[bajty]" << std::endl;
     for(unsigned i = 0; i < inodeVector_.size(); ++i)
     {
-        std::cout << std::setw(10) << i
-                  << std::setw(10) << inodeVector_[i].begin
+        std::cout << std::setw(10) << inodeVector_[i].begin
                   << std::setw(10) << inodeVector_[i].end()-1
                   << std::setw(10) << inodeVector_[i].blocks
                   << std::setw(10) << inodeVector_[i].size
@@ -186,7 +178,6 @@ void VirtualFileSystem::openFile() {
             inode new_inode =  *reinterpret_cast<inode *>(buff[i]+j);
             if(new_inode.used)
             {
-                std::cout<<"used\n";
                 inodeVector_.push_back(new_inode);
                 numberBlocksUsed_ += new_inode.blocks;
             }
