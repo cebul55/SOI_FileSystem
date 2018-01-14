@@ -56,4 +56,15 @@ public:
     void deleteFileSystem();
 };
 
+//f->file
+//c->create
+//u->upload
+//d->download
+//r->remove
+//n->chang name
+//m->map
+//l->list
+//x->delete VFS
+
+
 #endif //SOI_FILESYSTEM_FS_H

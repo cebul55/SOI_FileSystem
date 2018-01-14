@@ -2,10 +2,25 @@
 
 #include "fs.h"
 
+void showHelp(){
+    std::cout<<"Help:"<<std::endl
+             <<"'f' <file_name> 'operation to do' [text_file1] [text_file2]"<<std::endl
+             <<"f - file"<<std::endl
+             <<"c [int] - create file of n blocks"<<std::endl
+             <<"u [file_name] - upload file"<<std::endl
+             <<"d [file_name] - download file"<<std::endl
+             <<"r [file_name] - remove file"<<std::endl
+             <<"n [file_name 1] [file_name2] - rename file"<<std::endl
+             <<"m - map file system"<<std::endl
+             <<"l - list all files"<<std::endl
+             <<"x - delete virtual file system"<<std::endl;
+}
+
 int main(int argc , char* argv[]){
 
     if(argc < 2){
         std::cout<<"more than 1 argument needed\n";
+        showHelp();
         return 0;
     }
     else{
@@ -17,18 +32,6 @@ int main(int argc , char* argv[]){
                     return 0;
                 }
                 vfs.openFile();
-                /*if(*argv[3]=='u'){
-                    vfs.uploadFile((std::string)argv[4]);
-                    return 0;
-                }
-                else if(*argv[3]=='d'){
-                    vfs.downloadFile((std::string)argv[4]);
-                    return 0;
-                }
-                else if(*argv[3]=='l'){
-                    vfs.listAllFiles();
-                    return 0;
-                }*/
                 switch(*argv[3]){
                     case 'u':
                         vfs.uploadFile((std::string)argv[4]);
@@ -59,47 +62,6 @@ int main(int argc , char* argv[]){
             }
         }
     }
-    //f->file
-    //c->create
-    //u->upload
-    //d->download
-    //r->remove
-    //n->chang name
-    //m->map
-    //l->list
-    //x->delete VFS
-    //VirtualFileSystem vi("KACPER");
-    //vi.openFile();
-    //vi.downloadFile("ja.txt");
-    /*unsigned size = 20;
-    vi.createFile(size);
-    //vi.uploadFile("ja.txt");
-    vi.uploadFile("Plik 2kB.txt");
-    vi.uploadFile("Plik 2kB-kopia.txt");
-    vi.uploadFile("Plik 2kB-kopia 2.txt");
-    //vi.uploadFile("x.txt");
-    //vi.removeFile("ja.txt");
-    vi.uploadFile("Plik 2kB-kopia 3.txt");
-    vi.uploadFile("Plik 2kB-kopia 4.txt");
-    vi.renameFile("Plik 2kB-kopia 4.txt","pliiiik.txt");
-    //vi.removeFile("Plik 2kB.txt");
-    vi.removeFile("Plik 2kB-kopia.txt");
-    vi.removeFile("Plik 2kB-kopia 3.txt");
-    vi.uploadFile("ja.txt");
-    vi.downloadFile("pliiiik.txt");*/
-    //vi.uploadFile("Plik 2kB-kopia 3.txt");
-
-
-
-    //vi.uploadFile("Plik 2kB-kopia 5.txt");
-
-    //vi.listAllFiles();
-    //vi.mapFileSystem();
-    //std::cout<<"USUWAMY ja.txt"<<std::endl;
-    //vi.removeFile("ja.txt");
-    //vi.listAllFiles();
-    //vi.mapFileSystem();
-
 
     return 0;
 }
