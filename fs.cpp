@@ -40,7 +40,6 @@ unsigned VirtualFileSystem::alloc(unsigned blocks) {
                 return inodeVector_[i-1].end();
         }
         if(nodes != 0 && size_ - inodeVector_[nodes-1].end() >= blocks) {
-            std::cout<<blocks<<std::endl;
             return inodeVector_[nodes-1].end();
         }
         /*jezeli nie znajdziesz miejsca defragmentacja*/
@@ -99,6 +98,7 @@ void VirtualFileSystem::removeFile(std::string fileName) {
     inode *node;
     if((node = findInode(fileName)) == NULL)
         throw std::logic_error("File doesn't exist.");
+    numberBlocksUsed_=numberBlocksUsed_ - node->blocks;
     std::swap(*node,inodeVector_.back());
     inodeVector_.pop_back();
     sortiNodeVector();
@@ -181,11 +181,12 @@ void VirtualFileSystem::openFile() {
     }
     numberBlocksUsed_ = SYSTEM_BLOCKS;
     for(unsigned i = 0; i < SYSTEM_BLOCKS ; i++){
-        for(unsigned j = 0 ; i < BLOCK_SIZE; i += sizeof(inode))
+        for(unsigned j = 0 ; j < BLOCK_SIZE; j += sizeof(inode))
         {
-            inode new_inode =  *reinterpret_cast<inode *>(buff[j]+i);
+            inode new_inode =  *reinterpret_cast<inode *>(buff[i]+j);
             if(new_inode.used)
             {
+                std::cout<<"used\n";
                 inodeVector_.push_back(new_inode);
                 numberBlocksUsed_ += new_inode.blocks;
             }
@@ -224,6 +225,7 @@ void VirtualFileSystem::uploadFile(std::string source) {
     for(unsigned i = 0 ; i < source_blocks ; ++i){
         ofile.write(buff[i], BLOCK_SIZE);
     }
+    numberBlocksUsed_ =numberBlocksUsed_+ source_blocks;
     inode newInode;
     newInode.used = 1;
     newInode.begin = position;
@@ -235,8 +237,29 @@ void VirtualFileSystem::uploadFile(std::string source) {
     ifile.close();
 }
 
-void VirtualFileSystem::downloadFile(std::string) {
-
+void VirtualFileSystem::downloadFile(std::string name) {
+    inode *node;
+    if((node = findInode(name)) == NULL){
+        throw std::logic_error("No such file on disk");
+    }
+    unsigned offset = node->size;
+    buffer_ buff;
+    std::ofstream destinationFile;
+    destinationFile.open(name.c_str());
+    std::ifstream sourceFile;
+    sourceFile.open(name_.c_str());
+    sourceFile.seekg(node->begin * BLOCK_SIZE);
+    unsigned currentBlockSize = BLOCK_SIZE;
+    while(offset > 0){
+        if(offset < BLOCK_SIZE){
+            currentBlockSize = offset;
+        }
+        sourceFile.read(buff, currentBlockSize);
+        destinationFile.write(buff , currentBlockSize);
+        offset = offset - currentBlockSize;
+    }
+    destinationFile.close();
+    sourceFile.close();
 }
 
 void VirtualFileSystem::defragment() {

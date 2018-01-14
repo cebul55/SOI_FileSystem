@@ -5,7 +5,8 @@
 int main(int argc , char** argv){
 
     VirtualFileSystem vi("KACPER");
-    unsigned size = 20;
+    vi.openFile();
+    /*unsigned size = 20;
     vi.createFile(size);
     //vi.uploadFile("ja.txt");
     vi.uploadFile("Plik 2kB.txt");
@@ -15,10 +16,14 @@ int main(int argc , char** argv){
     //vi.removeFile("ja.txt");
     vi.uploadFile("Plik 2kB-kopia 3.txt");
     vi.uploadFile("Plik 2kB-kopia 4.txt");
+    vi.renameFile("Plik 2kB-kopia 4.txt","pliiiik.txt");
     //vi.removeFile("Plik 2kB.txt");
     vi.removeFile("Plik 2kB-kopia.txt");
     vi.removeFile("Plik 2kB-kopia 3.txt");
     vi.uploadFile("ja.txt");
+    vi.downloadFile("pliiiik.txt");*/
+    //vi.uploadFile("Plik 2kB-kopia 3.txt");
+
 
 
     //vi.uploadFile("Plik 2kB-kopia 5.txt");
