@@ -53,6 +53,7 @@ public:
     void removeFile(std::string);
     void listAllFiles();
     void mapFileSystem();
+    void deleteFileSystem();
 };
 
 #endif //SOI_FILESYSTEM_FS_H

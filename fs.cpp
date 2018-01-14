@@ -132,11 +132,11 @@ void VirtualFileSystem::mapFileSystem() {
         for(unsigned j = inodeVector_[i].begin; j < inodeVector_[i].end(); ++j)
             tab[j]=inodeVector_[i].name[0];
     }
-    std::cout<<"Legenda: "<<std::endl
-             <<" '*' blok systemowy "<<std::endl
-             <<" '|' blok wolny "<<std::endl
-             <<" 'n' blok zajety -> pierwsza litera nazwy pliku" << std::endl
-             <<"wielkosc bloku "<<BLOCK_SIZE<<std::endl;
+    std::cout<< std::setw(10) << "Legenda: "<<std::endl
+             << std::setw(10) << " '*' blok systemowy "<<std::endl
+             << std::setw(10) << " '|' blok wolny "<<std::endl
+             << std::setw(10) << " 'n' blok zajety -> pierwsza litera nazwy pliku np.'nazwa.txt' " << std::endl
+             << std::setw(10) << "wielkosc bloku "<<BLOCK_SIZE<<std::endl;
     for(unsigned i = 0; i < size_ ; ++i)
     {
         std::cout<<tab[i];
@@ -299,4 +299,13 @@ void VirtualFileSystem::sortiNodeVector() {
                 inodeVector_[j+1]=tmp;
             }
     }
+}
+
+void VirtualFileSystem::deleteFileSystem() {
+    //int i;
+    //std::fstream ofile;
+    //ofile.open(name_.c_str() , std::ios::out | std::ios::binary);
+    //ofile.close();
+
+    remove(name_.c_str());
 }
