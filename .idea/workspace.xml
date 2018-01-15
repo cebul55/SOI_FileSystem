@@ -11,25 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b0abf5b-d76a-46ac-82d6-2b405bda534e" name="Default" comment="working project with sh test file">
+    <list default="true" id="0b0abf5b-d76a-46ac-82d6-2b405bda534e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Plik 1,5kB.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Plik 1kB.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Plik 2kB.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/READ_ME.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/VirtualFS" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SOI_FileSystem.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SOI_FileSystem.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SOI_FileSystem.dir/fs.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SOI_FileSystem.dir/fs.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SOI_FileSystem.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SOI_FileSystem.dir/main.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/dysk" afterPath="" />
       <change beforePath="$PROJECT_DIR$/fs.cpp" afterPath="$PROJECT_DIR$/fs.cpp" />
       <change beforePath="$PROJECT_DIR$/fs.h" afterPath="$PROJECT_DIR$/fs.h" />
       <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change beforePath="$PROJECT_DIR$/makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/new" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+            <state relative-caret-position="30">
+              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -65,8 +52,8 @@
       <file leaf-file-name="fs.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fs.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="55" column="28" lean-forward="false" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#111#129#0" expanded="true" />
               </folding>
@@ -74,15 +61,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fs.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fs.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fs.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="304" column="6" lean-forward="false" selection-start-line="304" selection-start-column="6" selection-end-line="304" selection-end-column="6" />
+            <state relative-caret-position="30">
+              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
               <folding>
-                <element signature="e#4761#4992#0" expanded="false" />
-                <element signature="e#4994#5364#0" expanded="false" />
-                <element signature="e#6131#6289#0" expanded="false" />
+                <element signature="e#4598#4829#0" expanded="false" />
+                <element signature="e#4831#5201#0" expanded="false" />
+                <element signature="e#5968#6126#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -110,8 +97,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/fs.h" />
-        <option value="$PROJECT_DIR$/fs.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/fs.cpp" />
       </list>
     </option>
   </component>
@@ -202,7 +189,8 @@
       <updated>1515714797232</updated>
       <workItem from="1515714799008" duration="2868000" />
       <workItem from="1515762864222" duration="5884000" />
-      <workItem from="1515850731730" duration="21598000" />
+      <workItem from="1515850731730" duration="23166000" />
+      <workItem from="1516012861841" duration="1354000" />
     </task>
     <task id="LOCAL-00001" summary="start ver1">
       <created>1515716863054</created>
@@ -246,13 +234,27 @@
       <option name="project" value="LOCAL" />
       <updated>1515935431062</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="working project with sh test file">
+      <created>1515949695545</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1515949695545</updated>
+    </task>
+    <task id="LOCAL-00008" summary="2nd sh test file, show help">
+      <created>1515952179117</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1515952179117</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30350000" />
+    <option name="totallyTimeSpent" value="33272000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -262,12 +264,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="604" y="0" width="836" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29447854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.289801" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -278,6 +279,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.289801" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -319,14 +321,15 @@
     <MESSAGE value="not working openFille" />
     <MESSAGE value="working,todo-&gt;sh, main" />
     <MESSAGE value="working project with sh test file" />
-    <option name="LAST_COMMIT_MESSAGE" value="working project with sh test file" />
+    <MESSAGE value="2nd sh test file, show help" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd sh test file, show help" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/fs.cpp</url>
-          <line>96</line>
+          <line>89</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
@@ -335,6 +338,44 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="e#111#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4560">
+          <caret line="304" column="6" lean-forward="false" selection-start-line="304" selection-start-column="6" selection-end-line="304" selection-end-column="6" />
+          <folding>
+            <element signature="e#4598#4829#0" expanded="false" />
+            <element signature="e#4831#5201#0" expanded="false" />
+            <element signature="e#5968#6126#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -356,9 +397,9 @@
         <state relative-caret-position="1770">
           <caret line="118" column="16" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
           <folding>
-            <element signature="e#4761#4992#0" expanded="false" />
-            <element signature="e#4994#5364#0" expanded="false" />
-            <element signature="e#6131#6289#0" expanded="false" />
+            <element signature="e#4598#4829#0" expanded="false" />
+            <element signature="e#4831#5201#0" expanded="false" />
+            <element signature="e#5968#6126#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -404,9 +445,9 @@
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#4761#4992#0" expanded="false" />
-            <element signature="e#4994#5364#0" expanded="false" />
-            <element signature="e#6131#6289#0" expanded="false" />
+            <element signature="e#4598#4829#0" expanded="false" />
+            <element signature="e#4831#5201#0" expanded="false" />
+            <element signature="e#5968#6126#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -426,22 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fs.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="304" column="6" lean-forward="false" selection-start-line="304" selection-start-column="6" selection-end-line="304" selection-end-column="6" />
-          <folding>
-            <element signature="e#4761#4992#0" expanded="false" />
-            <element signature="e#4994#5364#0" expanded="false" />
-            <element signature="e#6131#6289#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fs.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="55" column="28" lean-forward="false" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#111#129#0" expanded="true" />
           </folding>
@@ -450,9 +479,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        <state relative-caret-position="30">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding>
+            <element signature="e#4598#4829#0" expanded="false" />
+            <element signature="e#4831#5201#0" expanded="false" />
+            <element signature="e#5968#6126#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

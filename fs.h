@@ -27,7 +27,6 @@ class VirtualFileSystem{
         unsigned blocks;
         char name[48];
     }; // inode size -> 64
-    //todo exception
 
     std::vector<inode> inodeVector_;
     typedef char buffer_ [BLOCK_SIZE];

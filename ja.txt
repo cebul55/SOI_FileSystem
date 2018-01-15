@@ -1,0 +1,134 @@
+∆wiczenie 6
+Konstrukcja systemu plikůw
+
+1. Cel świczenia
+
+  NaleŅy napisaś w ∂rodowisku systemu Minix program w jÍzyku C (oraz skrypt
+  demonstrujĪcy wykorzystanie tego programu) realizujĪcy podstawowe funkcje
+  systemu plikůw.
+
+2. Funkcje programu 
+
+  System plikůw naleŅy zorganizowaś w duŅym pliku o zadanej wielko∂ci, ktůry
+  bÍdzie "wirtualnym dyskiem". Program powinien tworzyś dysk wirtualny, oraz
+  dokonywaś zapisůw i odczytůw w celu zrealizowania podstawowych operacji na
+  dysku, zwiĪzanych z zarzĪdzaniem katalogiem, alokacjĪ plikůw oraz
+  utrzymywaniem unikalno∂ci nazw.
+
+3. Zadanie do zrealizowania
+
+  W pliku na dysku naleŅy zorganizowaś system plikůw z jednopoziomowym
+  katalogiem.  Elementem katalogu jest opis pliku, zawierajĪcy co najmniej
+  nazwÍ, wielko∂ś i sposůb rozmieszczenia pliku na wirtualnym dysku. NaleŅy
+  zaimplementowaś nastÍpujĪce operacje, dostÍpne dla uŅytkownika programu:
+
+	- tworzenie wirtualnego dysku,
+	
+	- kopiowanie pliku z dysku systemu Minix na dysk wirtualny,
+	
+	- kopiowanie pliku z dysku wirtualnego na dysk systemu Minix,
+	
+	- wy∂wietlanie katalogu dysku wirtualnego,
+		
+	- usuwanie pliku z wirtualnego dysku,
+	
+	- usuwanie wirtualnego dysku,
+
+	- wy∂wietlenie zestawienia z aktualnĪ mapĪ zajÍto∂ci wirtualnego dysku -
+	  czyli listy kolejnych obszarůw wirtualnego dysku z opisem: adres, typ
+	  obszaru, rozmiar, stan (np. dla blokůw danych: wolny/zajÍty).
+
+  Program ma kontrolowaś wielko∂ś dostÍpnego miejsca na wirtualnym dysku i
+  pojemno∂ś katalogu, reagowaś na průby przekroczenia tych wielko∂ci. 
+
+  Nie trzeba realizowaś funkcji otwierania pliku ani czytania/pisania
+  fragmentůw pliku.
+
+  Nie trzeba realizowaś funkcji zwiĪzanych z wspů≥bieŅnym dostÍpem. Zak≥ada
+  siÍ dostÍp sekwencyjny i wy≥Īczny do wirtualnego dysku.
+
+  NaleŅy przygotowaś demonstracjÍ (zgrupowanie serii poleceŮ w postaci skryptu
+  interpretera sh) prezentujĪcĪ s≥abe i silne strony przyjÍtego rozwiĪzania w
+  kontek∂cie ewentualnych zewnÍtrznej i wewnÍtrznej fragmentacji.
+
+
+
+∆wiczenie 6
+Konstrukcja systemu plikůw
+
+1. Cel świczenia
+
+  NaleŅy napisaś w ∂rodowisku systemu Minix program w jÍzyku C (oraz skrypt
+  demonstrujĪcy wykorzystanie tego programu) realizujĪcy podstawowe funkcje
+  systemu plikůw.
+
+2. Funkcje programu 
+
+  System plikůw naleŅy zorganizowaś w duŅym pliku o zadanej wielko∂ci, ktůry
+  bÍdzie "wirtualnym dyskiem". Program powinien tworzyś dysk wirtualny, oraz
+  dokonywaś zapisůw i odczytůw w celu zrealizowania podstawowych operacji na
+  dysku, zwiĪzanych z zarzĪdzaniem katalogiem, alokacjĪ plikůw oraz
+  utrzymywaniem unikalno∂ci nazw.
+
+3. Zadanie do zrealizowania
+
+  W pliku na dysku naleŅy zorganizowaś system plikůw z jednopoziomowym
+  katalogiem.  Elementem katalogu jest opis pliku, zawierajĪcy co najmniej
+  nazwÍ, wielko∂ś i sposůb rozmieszczenia pliku na wirtualnym dysku. NaleŅy
+  zaimplementowaś nastÍpujĪce operacje, dostÍpne dla uŅytkownika programu:
+
+	- tworzenie wirtualnego dysku,
+	
+	- kopiowanie pliku z dysku systemu Minix na dysk wirtualny,
+	
+	- kopiowanie pliku z dysku wirtualnego na dysk systemu Minix,
+	
+	- wy∂wietlanie katalogu dysku wirtualnego,
+		
+	- usuwanie pliku z wirtualnego dysku,
+	
+	- usuwanie wirtualnego dysku,
+
+	- wy∂wietlenie zestawienia z aktualnĪ mapĪ zajÍto∂ci wirtualnego dysku -
+	  czyli listy kolejnych obszarůw wirtualnego dysku z opisem: adres, typ
+	  obszaru, rozmiar, stan (np. dla blokůw danych: wolny/zajÍty).
+
+  Program ma kontrolowaś wielko∂ś dostÍpnego miejsca na wirtualnym dysku i
+  pojemno∂ś katalogu, reagowaś na průby przekroczenia tych wielko∂ci. 
+
+  Nie trzeba realizowaś funkcji otwierania pliku ani czytania/pisania
+  fragmentůw pliku.
+
+  Nie trzeba realizowaś funkcji zwiĪzanych z wspů≥bieŅnym dostÍpem. Zak≥ada
+  siÍ dostÍp sekwencyjny i wy≥Īczny do wirtualnego dysku.
+
+  NaleŅy przygotowaś demonstracjÍ (zgrupowanie serii poleceŮ w postaci skryptu
+  interpretera sh) prezentujĪcĪ s≥abe i silne strony przyjÍtego rozwiĪzania w
+  kontek∂cie ewentualnych zewnÍtrznej i wewnÍtrznej fragmentacji.
+
+
+
+∆wiczenie 6
+Konstrukcja systemu plikůw
+
+1. Cel świczenia
+
+  NaleŅy napisaś w ∂rodowisku systemu Minix program w jÍzyku C (oraz skrypt
+  demonstrujĪcy wykorzystanie tego programu) realizujĪcy podstawowe funkcje
+  systemu plikůw.
+
+2. Funkcje programu 
+
+  System plikůw naleŅy zorganizowaś w duŅym pliku o zadanej wielko∂ci, ktůry
+  bÍdzie "wirtualnym dyskiem". Program powinien tworzyś dysk wirtualny, oraz
+  dokonywaś zapisůw i odczytůw w celu zrealizowania podstawowych operacji na
+  dysku, zwiĪzanych z zarzĪdzaniem katalogiem, alokacjĪ plikůw oraz
+  utrzymywaniem unikalno∂ci nazw.
+
+3. Zadanie do zrealizowania
+
+  W pliku na dysku naleŅy zorganizowaś system plikůw z jednopoziomowym
+  katalogiem.  Elementem katalogu jest opis pliku, zawierajĪcy co najmniej
+  nazwÍ, wielko∂ś i sposůb rozmieszczenia pliku na wirtualnym dysku. NaleŅy
+  zaimplementowaś nastÍpujĪce operacje, dostÍpne dla uŅytkownika programu:
+

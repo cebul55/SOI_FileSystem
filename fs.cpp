@@ -1,12 +1,6 @@
 //
 // Created by Bartosz Cybulski on 12.01.2018.
 //
-//todo przerobic bez boost
-//todo skrypt
-//todo pozmieniac żeby bylo inne najlepiej chuj inne !
-
-
-
 #include "fs.h"
 
 
@@ -42,7 +36,6 @@ unsigned VirtualFileSystem::alloc(unsigned blocks) {
 int VirtualFileSystem::cmpInode(inode a, inode b) { return a.begin < b.begin ;}
 
 void VirtualFileSystem::close() {
-    //sort(inodeVector_.begin(), inodeVector_.end(), cmpInode);
     sortiNodeVector();
     buffer_ buff[SYSTEM_BLOCKS];
     unsigned index = 0;
@@ -254,7 +247,6 @@ void VirtualFileSystem::downloadFile(std::string name) {
 }
 
 void VirtualFileSystem::defragment() {
-    //todo zmien defragment zeby za kazdym wywolaniem zsuwalo wszystkie pliki
     unsigned index = 0, newPosition = SYSTEM_BLOCKS;
     if (inodeVector_[0].begin == SYSTEM_BLOCKS) {
         for (index = 1; index < inodeVector_.size(); ++index) {
@@ -265,10 +257,6 @@ void VirtualFileSystem::defragment() {
             }
         }
     }
-    /*for( index = 0; index < inodeVector_.size(); index++){
-        inodeVector_[index].begin = newPosition;
-        newPosition = inodeVector_[index].end();
-    }*/
     unsigned blocks = inodeVector_[index].blocks;
     unsigned oldPosition = inodeVector_[index].begin;
     inodeVector_[index].begin = newPosition;
@@ -302,10 +290,5 @@ void VirtualFileSystem::sortiNodeVector() {
 }
 
 void VirtualFileSystem::deleteFileSystem() {
-    //int i;
-    //std::fstream ofile;
-    //ofile.open(name_.c_str() , std::ios::out | std::ios::binary);
-    //ofile.close();
-
     remove(name_.c_str());
 }

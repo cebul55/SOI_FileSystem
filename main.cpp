@@ -1,5 +1,6 @@
-// Autor: Michał Artur Krawczak
-
+//
+// Created by Bartosz Cybulski on 12.01.2018.
+//
 #include "fs.h"
 
 void showHelp(){
